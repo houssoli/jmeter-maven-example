@@ -1,15 +1,18 @@
 package de.codecentric.jmeter.example;
 
+import java.io.IOException;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
+
 import javax.servlet.GenericServlet;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-import java.io.IOException;
-import java.util.Random;
 
 
 public class ExampleServlet extends GenericServlet {
-    private Random random = new Random();
+	private static final long serialVersionUID = -5490983863396414277L;
+	private final Random random = ThreadLocalRandom.current();
 
     @Override
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
