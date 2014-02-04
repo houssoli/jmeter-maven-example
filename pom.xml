@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
     <name>JMeter Maven Example</name>
     <description>
-        Example how to integrate jmeter tests in a maven build and how to automatically 
+        Integrate jmeter tests in a maven build and how to automatically 
         generate graphs from the test results using the jmeter plugins CMDRunner. 
     </description>
 
@@ -112,11 +112,11 @@
                         </plugin>
                     </jmeterPlugins>
                   	<proxyConfig>
-						<host>bluecoatproxy.cpgrp.root.local</host>
+						<host>my.proxy.host</host>
 						<port>8080</port>
-						<username>CPPROD\SRV-CGAWEB-PROD</username>
-						<password>456_Orange</password>
-						<hostExclusions>localhost|127.0.0.1|frcp03vdv0216</hostExclusions>
+						<username>groupe\username</username>
+						<password>secret</password>
+						<hostExclusions>localhost|127.0.0.1</hostExclusions>
                   	</proxyConfig>
                 </configuration>
                 <executions>
