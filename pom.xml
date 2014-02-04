@@ -127,18 +127,84 @@
                         <artifactId>jmeter-plugins</artifactId>
                         <version>1.0.0</version>
                         <exclusions>
-                            <exclusion>
-                                <groupId>kg.apc</groupId>
-                                <artifactId>perfmon</artifactId>
-                            </exclusion>
-                            <exclusion>
-                                <groupId>org.apache.hadoop</groupId>
-                                <artifactId>hadoop-core</artifactId>
-                            </exclusion>
-                            <exclusion>
-                                <groupId>org.apache.hbase</groupId>
-                                <artifactId>hbase</artifactId>
-                            </exclusion>
+					        <exclusion>
+					            <groupId>kg.apc</groupId>
+					            <artifactId>perfmon</artifactId>
+					        </exclusion>
+					        <exclusion>
+					            <groupId>kg.apc</groupId>
+					            <artifactId>cmdrunner</artifactId>
+					        </exclusion>
+
+					        <exclusion>
+					            <groupId>org.apache.jmeter</groupId>
+					            <artifactId>ApacheJMeter_core</artifactId>
+					        </exclusion>
+					        <exclusion>
+					            <groupId>org.apache.jmeter</groupId>
+					            <artifactId>ApacheJMeter_http</artifactId>
+					        </exclusion>
+					        <exclusion>
+					            <groupId>org.apache.jmeter</groupId>
+					            <artifactId>jorphan</artifactId>
+					        </exclusion>
+					        <exclusion>
+					            <groupId>org.apache.jmeter</groupId>
+					            <artifactId>ApacheJMeter_components</artifactId>
+					        </exclusion>
+					        <exclusion>
+					            <groupId>org.apache.jmeter</groupId>
+					            <artifactId>ApacheJMeter_java</artifactId>
+					        </exclusion>
+					        <exclusion>
+					            <groupId>org.apache.jmeter</groupId>
+					            <artifactId>ApacheJMeter_tcp</artifactId>
+					        </exclusion>
+					        <exclusion>
+					            <groupId>org.apache.jmeter</groupId>
+					            <artifactId>ApacheJMeter_functions</artifactId>
+					        </exclusion>
+					        <exclusion>
+					            <groupId>org.apache.jmeter</groupId>
+					            <artifactId>ApacheJMeter_jdbc</artifactId>
+					        </exclusion>
+
+					        <exclusion>
+					            <groupId>commons-logging</groupId>
+					            <artifactId>commons-logging</artifactId>
+					        </exclusion>
+					        <exclusion>
+					            <groupId>org.apache.hadoop</groupId>
+					            <artifactId>hadoop-core</artifactId>
+					        </exclusion>
+					        <exclusion>
+					            <groupId>org.apache.hbase</groupId>
+					            <artifactId>hbase</artifactId>
+					        </exclusion>
+					        <exclusion>
+					            <groupId>net.sf.json-lib</groupId>
+					            <artifactId>json-lib</artifactId>
+					        </exclusion>
+					        <exclusion>
+					            <groupId>com.jayway.jsonpath</groupId>
+					            <artifactId>json-path</artifactId>
+					        </exclusion>
+					        <exclusion>
+					            <groupId>org.springframework</groupId>
+					            <artifactId>spring-jms</artifactId>
+					        </exclusion>
+					        <exclusion>
+					            <groupId>org.apache.qpid</groupId>
+					            <artifactId>qpid-client</artifactId>
+					        </exclusion>
+					        <exclusion>
+					            <groupId>xom</groupId>
+					            <artifactId>xom</artifactId>
+					        </exclusion>
+					        <exclusion>
+					            <groupId>org.dnsjava</groupId>
+					            <artifactId>dnsjava</artifactId>
+					        </exclusion>
                         </exclusions>
                     </dependency>
                 </dependencies>
@@ -159,7 +225,7 @@
                     <stopKey>STOP</stopKey>
                 </configuration>
             </plugin>
-
+<!-- 
             <plugin>
                 <groupId>de.codecentric</groupId>
                 <artifactId>jmeter-graph-maven-plugin</artifactId>
@@ -197,6 +263,7 @@
                     </execution>
                 </executions>
             </plugin>
+             -->
         </plugins>
     </build>
 </project>
