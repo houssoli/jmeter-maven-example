@@ -111,6 +111,13 @@
                             <artifactId>jmeter-plugins</artifactId>
                         </plugin>
                     </jmeterPlugins>
+                  	<proxyConfig>
+						<host>bluecoatproxy.cpgrp.root.local</host>
+						<port>8080</port>
+						<username>CPPROD\SRV-CGAWEB-PROD</username>
+						<password>456_Orange</password>
+						<hostExclusions>localhost|127.0.0.1|frcp03vdv0216</hostExclusions>
+                  	</proxyConfig>
                 </configuration>
                 <executions>
                     <execution>
